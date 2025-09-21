@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Calculo DNI</title>
 </head>
 <body>
     <main>
         <h1>Validador de DNI</h1>
         <p>Instrucciones: Ingrese su DNI y su letra para verificar si son correctos</p>
-        <form>
-            <label for="numero">
+        <form id="dniForm">
+            <label for="numero">Numero y letra del DNI</label>
                 <div class="container-input">
                     <input type="text" id="numero" placeholder="12345678" maxlength="8">
                     <input type="text" id="letra" placeholder="P" maxlength="1">
                 </div>
-            </label>
+            
 
-            <button id="verificar">Verificar DNI</button>
+            <button id="verificar" type="button">Verificar DNI</button>
 
             <div id="resultado"></div>
 

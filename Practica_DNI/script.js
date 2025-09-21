@@ -8,6 +8,12 @@ document.addEventListener("DOMContentLoaded",function(){
 
     var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
 
+    function mostrarResultado(mensaje, tipo) {
+        txtResultado.textContent = mensaje;
+        txtResultado.className = tipo;
+        txtResultado.style.display = "block";
+    }
+
 
     form.addEventListener("submit", function(e) {
         e.preventDefault();
@@ -49,12 +55,4 @@ document.addEventListener("DOMContentLoaded",function(){
             mostrarResultado("La letra es correcta. DNI válido.", "success");
         }
     });
-
-    function mostrarResultado(mensaje, tipo) {
-                txtResultado.textContent = mensaje;
-                txtResultado.className = tipo;
-                txtResultado.style.display = "block";
-            }
-
-
 });
