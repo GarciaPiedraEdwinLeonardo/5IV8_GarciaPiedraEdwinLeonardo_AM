@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    padding: 1.5rem;
+}
+
+h1,h2{
+    color: white;
+    padding: 0.5rem;
+    font-size: 3rem;
+}
+
+.name-container{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.elements-name-container{
+    margin: 0 2rem 0 0;
+}
+
+.container-practicas{
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 1.8rem;
+    box-shadow: 0 0 0.8rem 0 rgba(255, 255, 255, 0.384);
+    padding: 1.5rem;
+}
+
+.title-practicas{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1.6rem;
+    padding: 1rem;
+}
+
+.elements-container-practicas{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.elements-container-practicas:hover{
+    text-decoration: underline;
+    font-size: 1.6rem;
+    text-shadow: 0 0 0.3rem rgba(255, 255, 255, 0.384);
+}
+
+.container-practicas:hover{
+    box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.384);
+}
