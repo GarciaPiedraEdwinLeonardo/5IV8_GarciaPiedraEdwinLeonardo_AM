@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { SafeAreaView, View, Text, TextInput, TouchableOpacity, Image, StyleSheet, Alert } from 'react-native';
+import { SafeAreaView, View, Text, TextInput, TouchableOpacity, Image, StyleSheet, Alert} from 'react-native';
+import * as ImagePicker from 'expo-image-picker';
 
 
 export default function App() {
@@ -63,7 +64,7 @@ export default function App() {
               style={styles.profileImage}
             />
           </TouchableOpacity>
-          <Text style={styles.changePhotoText}Toca la imagen para cambiarla></Text>
+          <Text style={styles.changePhotoText}>Toca la imagen para cambiarla</Text>
         </View>
       )}
     </View>
@@ -115,7 +116,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   button: {
-    backgroundColor: '#007AFF',
+    backgroundColor: '#007AAA',
     padding: 15,
     borderRadius: 10,
     alignItems: 'center',
@@ -131,7 +132,7 @@ const styles = StyleSheet.create({
     height: 150,
     borderRadius: 75,
     borderWidth: 3,
-    borderColor: '#007AFF',
+    borderColor: '#007AAA',
   },
   changePhotoText: {
     marginTop: 15,
